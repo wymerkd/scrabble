@@ -15,6 +15,6 @@ end
 
 describe('#ruby_logic') do
   it("returns the sum of points for a given word") do
-    expect(scrabble("adbfkjq")).to(eq(32))
+    expect(scrabble("adbfkjq")).to(eq(33))
   end
 end
