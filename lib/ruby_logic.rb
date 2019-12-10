@@ -1,8 +1,9 @@
 def scrabble(word)
+  one_point = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t", "A", "E", "I", "O", "U", "L", "N", "R", "S", "T"]
   array=[]
   split_word = word.split("")
   split_word.each do |letter|
-    if (letter === "a")
+    if (one_point.include?(letter))
       array.push(1)
     # elsif (letter === "I")
     #   array.push("1")
