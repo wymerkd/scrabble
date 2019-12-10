@@ -1,13 +1,14 @@
 def scrabble(word)
-  one_point = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t", "A", "E", "I", "O", "U", "L", "N", "R", "S", "T"]
-  two_point = ["d", "g", "D", "G"]
-  three_point = ["b", "c", "m", "p", "B", "C", "M", "P"]
-  four_point = ["f", "h", "v", "w", "y", "F", "H", "V", "W", "Y"]
-  five_point = ["k", "K"]
-  eight_point = ["j", "x", "J", "X"]
-  ten_point = ["q", "z", "Q", "Z"]
+  one_point = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"]
+  two_point = ["d", "g"]
+  three_point = ["b", "c", "m", "p"]
+  four_point = ["f", "h", "v", "w", "y"]
+  five_point = ["k"]
+  eight_point = ["j", "x"]
+  ten_point = ["q", "z"]
   array=[]
-  split_word = word.split("")
+  downcase_word = word.downcase()
+  split_word = downcase_word.split("")
   split_word.each do |letter|
     if (one_point.include?(letter))
       array.push(1)
@@ -27,6 +28,5 @@ def scrabble(word)
       array.push(letter)
     end
   end
-  array
   array.sum
 end
