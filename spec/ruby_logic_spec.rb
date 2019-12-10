@@ -7,6 +7,7 @@ describe('#ruby_logic') do
   end
 end
 
+# Test now fails due to updated logic (array.sum)
 # describe('#ruby_logic') do
 #   it("returns correct points for each letter of the alphabet in both lowercase and uppercase") do
 #     expect(scrabble("adbfkjq")).to(eq([1, 2, 3, 4, 5, 8, 10]))

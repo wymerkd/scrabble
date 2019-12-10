@@ -1,3 +1,4 @@
+# Try to break this down into multiple functions that handle one thing for testing purposes.
 def scrabble(word)
   one_point = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"]
   two_point = ["d", "g"]
